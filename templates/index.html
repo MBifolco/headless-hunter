@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Job Listings</title>
+</head>
+<body>
+    <h1>Job Listings</h1>
+    <table border="1">
+        <tr>
+            <th>Job ID</th>
+            <th>Title</th>
+            <th>Company</th>
+            <th>Fuzzy Score</th>
+        </tr>
+        {% for job in jobs %}
+        <tr>
+            <td>{{ job[0] }}</td>
+            <td>{{ job[1] }}</td>
+            <td>{{ job[2] }}</td>
+            <td>{{ "%.2f"|format(job[3]) }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
