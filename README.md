@@ -10,8 +10,11 @@ Headless-hunter was created to make it easy to do two things:
 2. Update the negative keyword list in main.py to exclude certain titles (Optional)
 3. Update the fuzzy matching threshold to suit your needs
 
+## Run
+Run `search.py`
+
 ## See Results
-Run app.py open up localhost:8000
+Run `app.py` open up http://localhost:8000
 
 ## Adding More Sites
 If there is a site you'd like to search add it to site_configs.json.  Currently HH only supports sites using Consider or Getro to power their listings, however, you can add another module for the site yourself.
