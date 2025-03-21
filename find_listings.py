@@ -6,35 +6,38 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.options import Options
 
-# CSV file to save results (updated each time a match is found)
 RESULTS_CSV = "career_links.csv"
 
-def write_to_csv(found_on_url, career_url):
-    """Append a new row to the results CSV with the source URL and scraped career URL."""
+def write_to_csv(found_on_url, career_url, powered_by, consider_id):
+    """Append a new row to the results CSV with source URL, career URL, powered_by info and consider id if applicable."""
     file_exists = os.path.isfile(RESULTS_CSV)
     with open(RESULTS_CSV, mode="a", newline="", encoding="utf-8") as csvfile:
-        fieldnames = ["found_on_url", "career_url"]
+        fieldnames = ["found_on_url", "career_url", "powered_by", "id"]
         writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
         if not file_exists:
             writer.writeheader()
-        writer.writerow({"found_on_url": found_on_url, "career_url": career_url})
+        writer.writerow({
+            "found_on_url": found_on_url,
+            "career_url": career_url,
+            "powered_by": powered_by,
+            "id": consider_id
+        })
 
 def contains_keyword(text, keywords):
-    """Return True if the text contains any keyword (case-insensitive)."""
+    """Return True if the text contains any of the keywords (case-insensitive)."""
     text_lower = text.lower()
     return any(keyword in text_lower for keyword in keywords)
 
 def find_career_links(driver):
     """
-    Search for any <a> or <button> elements with visible text containing "careers" or "jobs".
-    Returns a list of target URLs (or empty strings if no href is present).
+    Search for any <a> or <button> elements whose visible text contains "careers" or "jobs".
+    Returns a list of target URLs (or empty strings if no href is available).
     """
     elements = driver.find_elements(By.XPATH, "//a | //button")
     career_links = []
     for element in elements:
         try:
-            if element.text and contains_keyword(element.text, ["careers", "jobs", "join us", "work with us"]):
-                # Only <a> tags typically have an href attribute.
+            if element.text and contains_keyword(element.text, ["careers", "jobs"]):
                 href = element.get_attribute("href") if element.tag_name.lower() == "a" else ""
                 career_links.append(href)
         except Exception:
@@ -50,7 +53,7 @@ def get_portfolio_investment_links(driver):
     links = []
     for element in elements:
         try:
-            if element.text and contains_keyword(element.text, ["portfolio", "investments", "companies"]):
+            if element.text and contains_keyword(element.text, ["portfolio", "investments"]):
                 href = element.get_attribute("href")
                 if href:
                     links.append(href)
@@ -58,8 +61,51 @@ def get_portfolio_investment_links(driver):
             continue
     return links
 
+def get_powered_by_info(driver):
+    """
+    Check the current page for "Powered by Getro" or "Powered by Consider".
+    If "Powered by Consider" is found, attempt to extract the additional id from a div with class "boards-body".
+    Returns a tuple (powered_by, consider_id) where powered_by is "getro", "consider", or an empty string.
+    """
+    powered_by = ""
+    consider_id = ""
+    page_source = driver.page_source
+    if "Powered by Consider" in page_source:
+        powered_by = "consider"
+        try:
+            # Find the div with class "boards-body"
+            element = driver.find_element(By.CSS_SELECTOR, "div.boards-body")
+            class_attr = element.get_attribute("class")
+            classes = class_attr.split()
+            # Exclude the base class to extract the id from the other class
+            other_classes = [cls for cls in classes if cls != "boards-body"]
+            if other_classes:
+                consider_id = other_classes[0]
+        except Exception:
+            pass
+    elif "Powered by Getro" in page_source:
+        powered_by = "getro"
+    return powered_by, consider_id
+
+def process_career_link(driver, source_url, career_link):
+    """
+    Given a career_link URL, navigate to that URL to search for powered-by info.
+    Then record the result in the CSV.
+    """
+    powered_by = ""
+    consider_id = ""
+    if career_link:
+        try:
+            driver.get(career_link)
+            time.sleep(2)  # Allow the career page to load
+            powered_by, consider_id = get_powered_by_info(driver)
+        except Exception as e:
+            print(f"Error processing career link {career_link}: {e}")
+    print(f"Recording: found_on_url={source_url}, career_url={career_link}, powered_by={powered_by}, id={consider_id}")
+    write_to_csv(source_url, career_link, powered_by, consider_id)
+
 def main():
-    # Load the list of URLs from a CSV with header "urls"
+    # Load URLs from CSV file 'urls.csv' with header 'urls'
     urls_df = pd.read_csv("urls.csv")
     urls = urls_df["urls"].tolist()
 
@@ -69,35 +115,34 @@ def main():
     driver = webdriver.Chrome(options=options)
 
     for url in urls:
+        if "http" not in url:
+            url = "http://" + url  # Ensure URL starts with http if not present
         print(f"Processing main URL: {url}")
         try:
             driver.get(url)
             time.sleep(2)  # Allow time for the page to load
 
-            # Search for careers/jobs on the main page.
+            # Search for careers/jobs links on the main page.
             career_links = find_career_links(driver)
             if career_links:
                 for career_link in career_links:
-                    print(f"Found careers/jobs link on main page: {career_link}")
-                    write_to_csv(url, career_link)
-                # Continue to next main URL if any match is found.
-                continue
+                    process_career_link(driver, url, career_link)
+                continue  # Move to next main URL if a career link is found
 
-            # If not found, look for portfolio/investments links.
+            # If no careers/jobs links on the main page, check for portfolio/investments links.
             portfolio_links = get_portfolio_investment_links(driver)
             found_in_portfolio = False
             for p_link in portfolio_links:
                 print(f"Following portfolio/investments link: {p_link}")
                 try:
                     driver.get(p_link)
-                    time.sleep(2)  # Wait for the secondary page to load
+                    time.sleep(2)  # Allow the secondary page to load
                     career_links = find_career_links(driver)
                     if career_links:
                         for career_link in career_links:
-                            print(f"Found careers/jobs link on portfolio/investments page: {career_link}")
-                            write_to_csv(p_link, career_link)
+                            process_career_link(driver, p_link, career_link)
                         found_in_portfolio = True
-                        break  # Move to the next main URL once a match is found
+                        break  # Once a match is found, move to the next main URL
                 except Exception as e:
                     print(f"Error processing portfolio link {p_link}: {e}")
                     continue
