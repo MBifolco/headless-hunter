@@ -1,0 +1,470 @@
+[
+    {
+        "id": "congruent-ventures",
+        "name": "Congruent Ventures",
+        "type": "consider",
+        "url": "https://jobs.congruentvc.com/api-boards/search-jobs"
+    },
+    {
+        "id": "amplify-la",
+        "name": "Amplify La",
+        "type": "consider",
+        "url": "https://jobs.amplify.la/api-boards/search-jobs"
+    },
+    {
+        "id": "bain-ventures",
+        "name": "Bain Ventures",
+        "type": "consider",
+        "url": "https://jobs.baincapitalventures.com/api-boards/search-jobs"
+    },
+    {
+        "id": "bessemer-ventures",
+        "name": "Bessemer Ventures",
+        "type": "consider",
+        "url": "https://jobs.bvp.com/api-boards/search-jobs"
+    },
+    {
+        "id": "dynamo",
+        "name": "Dynamo",
+        "type": "consider",
+        "url": "https://careers.dynamo.vc/api-boards/search-jobs"
+    },
+    {
+        "id": "expa",
+        "name": "Expa",
+        "type": "consider",
+        "url": "https://jobs.expa.com/api-boards/search-jobs"
+    },
+    {
+        "id": "hcvc",
+        "name": "Hcvc",
+        "type": "consider",
+        "url": "https://jobs.hcvc.co/api-boards/search-jobs"
+    },
+    {
+        "id": "illuminate-financial",
+        "name": "Illuminate Financial",
+        "type": "consider",
+        "url": "https://jobs.illuminatefinancial.com/api-boards/search-jobs"
+    },
+    {
+        "id": "lofty-ventures",
+        "name": "Lofty Ventures",
+        "type": "consider",
+        "url": "https://jobs.loftyventures.com/api-boards/search-jobs"
+    },
+    {
+        "id": "pantera-capital",
+        "name": "Pantera Capital",
+        "type": "consider",
+        "url": "https://jobs.panteracapital.com/api-boards/search-jobs"
+    },
+    {
+        "id": "playground-global",
+        "name": "Playground Global",
+        "type": "consider",
+        "url": "https://careers.playground.global/api-boards/search-jobs"
+    },
+    {
+        "id": "1517-fund",
+        "name": "1517 Fund",
+        "type": "consider",
+        "url": "https://jobs.1517fund.com/api-boards/search-jobs"
+    },
+    {
+        "id": "amplify-partners",
+        "name": "Amplify Partners",
+        "type": "consider",
+        "url": "https://talent.amplifypartners.com/api-boards/search-jobs"
+    },
+    {
+        "id": "blue-heron",
+        "name": "Blue Heron",
+        "type": "consider",
+        "url": "https://careers.blueheroncap.com/api-boards/search-jobs"
+    },
+    {
+        "id": "chiratae",
+        "name": "Chiratae",
+        "type": "consider",
+        "url": "https://careers.chiratae.com/api-boards/search-jobs"
+    },
+    {
+        "id": "costanoa-ventures",
+        "name": "Costanoa Ventures",
+        "type": "consider",
+        "url": "https://jobs.costanoa.vc/api-boards/search-jobs"
+    },
+    {
+        "id": "foresite-capital",
+        "name": "Foresite Capital",
+        "type": "consider",
+        "url": "https://careers.foresitecapital.com/api-boards/search-jobs"
+    },
+    {
+        "id": "gaingels",
+        "name": "Gaingels",
+        "type": "consider",
+        "url": "https://gaingels.com/api-boards/search-jobs"
+    },
+    {
+        "id": "genoa",
+        "name": "Genoa",
+        "type": "consider",
+        "url": "https://careers.genoavc.com/api-boards/search-jobs"
+    },
+    {
+        "id": "goodwater-capital",
+        "name": "Goodwater Capital",
+        "type": "consider",
+        "url": "https://portfoliojobs.goodwatercap.com/api-boards/search-jobs"
+    },
+    {
+        "id": "griffin-gaming",
+        "name": "Griffin Gaming",
+        "type": "consider",
+        "url": "https://careers.griffingp.com/api-boards/search-jobs"
+    },
+    {
+        "id": "hummingbird-ventures",
+        "name": "Hummingbird Ventures",
+        "type": "consider",
+        "url": "https://jobs.hummingbird.vc/api-boards/search-jobs"
+    },
+    {
+        "id": "icon-ventures",
+        "name": "Icon Ventures",
+        "type": "consider",
+        "url": "https://jobs.iconventures.com/api-boards/search-jobs"
+    },
+    {
+        "id": "indiebio",
+        "name": "Indiebio",
+        "type": "consider",
+        "url": "https://biotechjobs.indiebio.co/api-boards/search-jobs"
+    },
+    {
+        "id": "jvp",
+        "name": "Jvp",
+        "type": "consider",
+        "url": "https://jobs.jvpvc.com/api-boards/search-jobs"
+    },
+    {
+        "id": "nea",
+        "name": "Nea",
+        "type": "consider",
+        "url": "https://careers.nea.com/api-boards/search-jobs"
+    },
+    {
+        "id": "owl-ventures",
+        "name": "Owl Ventures",
+        "type": "consider",
+        "url": "https://careers.owlvc.com/api-boards/search-jobs"
+    },
+    {
+        "id": "promus-ventures",
+        "name": "Promus Ventures",
+        "type": "consider",
+        "url": "https://jobs.promusventures.com/api-boards/search-jobs"
+    },
+    {
+        "id": "qed-investors",
+        "name": "Qed Investors",
+        "type": "consider",
+        "url": "https://careers.qedinvestors.com/api-boards/search-jobs"
+    },
+    {
+        "id": "sequoia-capital",
+        "name": "Sequoia Capital",
+        "type": "consider",
+        "url": "https://jobs.sequoiacap.com/api-boards/search-jobs"
+    },
+    {
+        "id": "serena",
+        "name": "Serena",
+        "type": "consider",
+        "url": "https://careers.serena.vc/api-boards/search-jobs"
+    },
+    {
+        "id": "south-park-commons",
+        "name": "South Park Commons",
+        "type": "consider",
+        "url": "https://jobs.southparkcommons.com/api-boards/search-jobs"
+    },
+    {
+        "id": "thomvest",
+        "name": "Thomvest",
+        "type": "consider",
+        "url": "https://jobs.thomvest.com/api-boards/search-jobs"
+    },
+    {
+        "id": "union-square-ventures",
+        "name": "Union Square Ventures",
+        "type": "consider",
+        "url": "https://jobs.usv.com/api-boards/search-jobs"
+    },
+    {
+        "id": "wing-venture-capital",
+        "name": "Wing Venture Capital",
+        "type": "consider",
+        "url": "https://careers.wing.vc/api-boards/search-jobs"
+    },
+    {
+        "id": "abstraction-capital",
+        "name": "Abstraction Capital",
+        "type": "consider",
+        "url": "https://jobs.abstraction.vc/api-boards/search-jobs"
+    },
+    {
+        "id": "ai-fund",
+        "name": "Ai Fund",
+        "type": "consider",
+        "url": "https://careers.aifund.ai/api-boards/search-jobs"
+    },
+    {
+        "id": "cometa",
+        "name": "Cometa",
+        "type": "consider",
+        "url": "https://jobs.cometa.vc/api-boards/search-jobs"
+    },
+    {
+        "id": "contrary",
+        "name": "Contrary",
+        "type": "consider",
+        "url": "https://jobs.contrary.com/api-boards/search-jobs"
+    },
+    {
+        "id": "fin-capital",
+        "name": "Fin Capital",
+        "type": "consider",
+        "url": "https://jobs.fin.capital/api-boards/search-jobs"
+    },
+    {
+        "id": "foothill-ventures",
+        "name": "Foothill Ventures",
+        "type": "consider",
+        "url": "https://jobs.foothill.ventures/api-boards/search-jobs"
+    },
+    {
+        "id": "gigascale",
+        "name": "Gigascale",
+        "type": "consider",
+        "url": "https://careers.gigascale.com/api-boards/search-jobs"
+    },
+    {
+        "id": "golden-ventures",
+        "name": "Golden Ventures",
+        "type": "consider",
+        "url": "https://jobs.golden.ventures/api-boards/search-jobs"
+    },
+    {
+        "id": "gradient-ventures",
+        "name": "Gradient Ventures",
+        "type": "consider",
+        "url": "https://careers.gradient.com/api-boards/search-jobs"
+    },
+    {
+        "id": "high-alpha",
+        "name": "High Alpha",
+        "type": "consider",
+        "url": "https://talent.highalpha.com/api-boards/search-jobs"
+    },
+    {
+        "id": "lemniscap",
+        "name": "Lemniscap",
+        "type": "consider",
+        "url": "https://careers.lemniscap.com/api-boards/search-jobs"
+    },
+    {
+        "id": "offline-ventures",
+        "name": "Offline Ventures",
+        "type": "consider",
+        "url": "https://jobs.offline.vc/api-boards/search-jobs"
+    },
+    {
+        "id": "playfair-capital",
+        "name": "Playfair Capital",
+        "type": "consider",
+        "url": "https://careers.playfair.vc/api-boards/search-jobs"
+    },
+    {
+        "id": "up-partners",
+        "name": "Up Partners",
+        "type": "consider",
+        "url": "https://careers.up.partners/api-boards/search-jobs"
+    },
+    {
+        "id": "alven",
+        "name": "Alven",
+        "type": "consider",
+        "url": "https://jobs.alven.co/api-boards/search-jobs"
+    },
+    {
+        "id": "balderton-capital",
+        "name": "Balderton Capital",
+        "type": "consider",
+        "url": "https://careers.balderton.com/api-boards/search-jobs"
+    },
+    {
+        "id": "cherry-ventures",
+        "name": "Cherry Ventures",
+        "type": "consider",
+        "url": "https://talent.cherry.vc/api-boards/search-jobs"
+    },
+    {
+        "id": "courtside",
+        "name": "Courtside",
+        "type": "consider",
+        "url": "https://jobs.courtsidevc.com/api-boards/search-jobs"
+    },
+    {
+        "id": "decibel-partners",
+        "name": "Decibel Partners",
+        "type": "consider",
+        "url": "https://portfoliojobs.decibel.vc/api-boards/search-jobs"
+    },
+    {
+        "id": "edbi",
+        "name": "Edbi",
+        "type": "consider",
+        "url": "https://careers.edbi.com/api-boards/search-jobs"
+    },
+    {
+        "id": "atlantic-labs-and-foodlabs",
+        "name": "Atlantic Labs And Foodlabs",
+        "type": "consider",
+        "url": "https://jobs.atlanticlabsfoodlabsplatform.com/api-boards/search-jobs"
+    },
+    {
+        "id": "forerunner-ventures",
+        "name": "Forerunner Ventures",
+        "type": "consider",
+        "url": "https://jobs.forerunnerventures.com/api-boards/search-jobs"
+    },
+    {
+        "id": "gtmfund",
+        "name": "Gtmfund",
+        "type": "consider",
+        "url": "https://jobs.gtmfund.com/api-boards/search-jobs"
+    },
+    {
+        "id": "gumi-cryptos",
+        "name": "Gumi Cryptos",
+        "type": "consider",
+        "url": "https://careers.gumi-cryptos.com/api-boards/search-jobs"
+    },
+    {
+        "id": "innospark-ventures",
+        "name": "Innospark Ventures",
+        "type": "consider",
+        "url": "https://careers.innospark.vc/api-boards/search-jobs"
+    },
+    {
+        "id": "inovia",
+        "name": "Inovia",
+        "type": "consider",
+        "url": "https://careers.inovia.vc/api-boards/search-jobs"
+    },
+    {
+        "id": "kaszek",
+        "name": "Kaszek",
+        "type": "consider",
+        "url": "https://jobs.kaszek.com/api-boards/search-jobs"
+    },
+    {
+        "id": "mana-ventures",
+        "name": "Mana Ventures",
+        "type": "consider",
+        "url": "https://jobs.manaventures.vc/api-boards/search-jobs"
+    },
+    {
+        "id": "mantis",
+        "name": "Mantis",
+        "type": "consider",
+        "url": "https://careers.mantisvc.com/api-boards/search-jobs"
+    },
+    {
+        "id": "nexus-venture-partners",
+        "name": "Nexus Venture Partners",
+        "type": "consider",
+        "url": "https://jobs.nexusvp.com/api-boards/search-jobs"
+    },
+    {
+        "id": "notion-capital",
+        "name": "Notion Capital",
+        "type": "consider",
+        "url": "https://jobs.notion.vc/api-boards/search-jobs"
+    },
+    {
+        "id": "paypal-ventures",
+        "name": "Paypal Ventures",
+        "type": "consider",
+        "url": "https://jobs.paypal.vc/api-boards/search-jobs"
+    },
+    {
+        "id": "sequoia-capital-india",
+        "name": "Sequoia Capital India",
+        "type": "consider",
+        "url": "https://careers.peakxv.com/api-boards/search-jobs"
+    },
+    {
+        "id": "protagonist",
+        "name": "Protagonist",
+        "type": "consider",
+        "url": "https://jobs.protagonist.co/api-boards/search-jobs"
+    },
+    {
+        "id": "scribble",
+        "name": "Scribble",
+        "type": "consider",
+        "url": "https://jobs.scribble.vc/api-boards/search-jobs"
+    },
+    {
+        "id": "sorenson-capital",
+        "name": "Sorenson Capital",
+        "type": "consider",
+        "url": "https://careers.sorensoncap.com/api-boards/search-jobs"
+    },
+    {
+        "id": "urban-innovation-fund",
+        "name": "Urban Innovation Fund",
+        "type": "consider",
+        "url": "https://jobs.urbaninnovationfund.com/api-boards/search-jobs"
+    },
+    {
+        "id": "vu-venture-partners",
+        "name": "Vu Venture Partners",
+        "type": "consider",
+        "url": "https://jobs.vuventurepartners.com/api-boards/search-jobs"
+    },
+    {
+        "id": "01-advisors",
+        "name": "01 Advisors",
+        "type": "consider",
+        "url": "https://jobs.01a.com/api-boards/search-jobs"
+    },
+    {
+        "id": "k1",
+        "name": "K1",
+        "type": "consider",
+        "url": "https://portfoliocareers.k1.com/api-boards/search-jobs"
+    },
+    {
+        "id": "necessary-ventures",
+        "name": "Necessary Ventures",
+        "type": "consider",
+        "url": "https://jobs.necessary.vc/api-boards/search-jobs"
+    },
+    {
+        "id": "oregon-venture-fund",
+        "name": "Oregon Venture Fund",
+        "type": "consider",
+        "url": "https://jobs.oregonventurefund.com/api-boards/search-jobs"
+    },
+    {
+        "id": "spider-capital",
+        "name": "Spider Capital",
+        "type": "consider",
+        "url": "https://careers.spidercapital.com/api-boards/search-jobs"
+    }
+]

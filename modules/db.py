@@ -1,8 +1,8 @@
 import sqlite3
 import json
 import os
-
-
+import datetime
+from uuid import uuid4
 # Use environment variable for database name, or default to "jobs.db"
 DATABASE_NAME = os.environ.get("DATABASE_NAME", "jobs.db")
 
@@ -12,22 +12,22 @@ def create_db():
     cursor = conn.cursor()
     cursor.execute('''
         CREATE TABLE IF NOT EXISTS jobs (
-            job_id TEXT PRIMARY KEY,
+            id TEXT PRIMARY KEY,
+            site_id TEXT,
+            job_id TEXT,
             title TEXT,
             company_name TEXT,
-            company_id TEXT,
-            company_domain TEXT,
             apply_url TEXT,
-            url TEXT,
-            timeStamp TEXT,
+            source_url TEXT,
             salary_min REAL,
             salary_max REAL,
-            min_years_exp INTEGER,
+            location_city TEXT,
+            location_state TEXT,
+            location_country TEXT,
             remote BOOLEAN,
             hybrid BOOLEAN,
-            is_featured BOOLEAN,
-            fuzzy_score REAL,
-            raw_data TEXT
+            last_seen DATE,
+            UNIQUE(site_id, job_id)
         )
     ''')
     conn.commit()
@@ -40,34 +40,54 @@ def save_job(conn, job):
     Selected fields are extracted from the job object, and the entire job is stored as JSON.
     """
     cursor = conn.cursor()
-    job_id = job.get("jobId")
+
+    site_id = job.get("site_id")
+    job_id = job.get("job_id")
     title = job.get("title")
-    company_name = job.get("companyName")
-    company_id = job.get("companyId")
-    company_domain = job.get("companyDomain")
-    apply_url = job.get("applyUrl")
-    url = job.get("url")
-    timeStamp = job.get("timeStamp")
-    salary = job.get("salary", {})
-    salary_min = salary.get("minValue")
-    salary_max = salary.get("maxValue")
-    min_years_exp = job.get("minYearsExp")
+    company_name = job.get("company_name")
+    apply_url = job.get("apply_url")
+    source_url = job.get("source_url")
+    salary_min = job.get("salary_min")
+    salary_max = job.get("salary_max")
+    location_city = job.get("location_city")
+    location_state = job.get("location_state")
+    location_country = job.get("location_country")
     remote = int(job.get("remote", False))
     hybrid = int(job.get("hybrid", False))
-    is_featured = int(job.get("isFeatured", False))
-    fuzzy_score = job.get("fuzzyScore")
-    raw_data = json.dumps(job)
-    
+    last_seen = datetime.datetime.now().strftime("%Y-%m-%d")
+
+    print(site_id, job_id, title, company_name, apply_url, source_url, salary_min, salary_max, location_city, location_state, location_country, remote, hybrid, last_seen, last_seen)
     try:
         cursor.execute('''
-            INSERT OR IGNORE INTO jobs 
-            (job_id, title, company_name, company_id, company_domain, apply_url, url, timeStamp, salary_min, salary_max, min_years_exp, remote, hybrid, is_featured, fuzzy_score, raw_data)
-            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
-        ''', (job_id, title, company_name, company_id, company_domain, apply_url, url, timeStamp, salary_min, salary_max, min_years_exp, remote, hybrid, is_featured, fuzzy_score, raw_data))
+            INSERT INTO jobs 
+            (id, site_id, job_id, title, company_name, apply_url, source_url, salary_min, salary_max, location_city, location_state, location_country, remote, hybrid, last_seen)
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) 
+            ON CONFLICT(site_id, job_id) DO UPDATE SET last_seen = ?
+        ''',(str(uuid4()), site_id, job_id, title, company_name, apply_url, source_url, salary_min, salary_max, location_city, location_state, location_country, remote, hybrid, last_seen, last_seen))
         conn.commit()
         if cursor.rowcount > 0:
-            print(f"Saved job: {job_id} - {title} (fuzzy score: {fuzzy_score:.2f})")
+            print(f"Saved job: {job_id} - {title}")
         else:
             print(f"Job {job_id} - {title} already exists. Skipping.")
     except Exception as e:
         print(f"Error saving job {job_id}: {e}")
+
+def update_job(conn, job, scrape_batch):
+    # updates date for job
+    cursor = conn.cursor()
+    job_id = job.get("jobId")
+    last_seen = datetime.datetime.now().strftime("%Y-%m-%d")
+    try:
+        cursor.execute('''
+            UPDATE jobs 
+            SET last_seen = ?
+            WHERE job_id = ?
+        ''', (scrape_batch, job_id))
+        conn.commit()
+        if cursor.rowcount > 0:
+            print(f"Updated job: {job_id}")
+        else:
+            print(f"Job {job_id} not found for update. Skipping.")
+    except Exception as e:
+        print(f"Error updating job {job_id}: {e}")
+

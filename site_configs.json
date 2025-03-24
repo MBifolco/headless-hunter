@@ -1,20 +1,15 @@
 [
     {
-        "id": "andreessen-horowitz",
-        "name": "Andreessen Horowitz",
-        "type": "consider",
-        "url": "https://jobs.a16z.com/api-boards/search-jobs"
+        "id": "fifth-wall",
+        "name": "Fifth Wall",
+        "type": "getro",
+        "url": "https://jobs.fifthwall.vc/jobs"
     },
     {
-        "id": "sequoia-capital",
-        "name": "Sequoia Capital",
-        "type": "consider",
-        "url": "https://jobs.sequoiacap.com/api-boards/search-jobs"
-    },
-    {
-        "id": "1517-fund",
-        "name": "1517 Fund",
-        "type": "consider",
-        "url": "https://jobs.1517fund.com/api-boards/search-jobs"
+        "id": "grit-ventures",
+        "name": "Grit Ventures",
+        "type": "getro",
+        "url": "https://jobs.gritventures.com/jobs"
     }
+   
 ]

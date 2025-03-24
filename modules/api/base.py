@@ -22,4 +22,6 @@ class ApiJobSite(JobSite):
             return data
         except Exception as e:
             print(f"Error scraping API site {self.name}: {e}")
+            print(f"Response: {response.text if 'response' in locals() else 'No response'}")
             return None
+        

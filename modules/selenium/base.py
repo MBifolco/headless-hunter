@@ -1,3 +1,5 @@
+import time 
+
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
@@ -34,7 +36,8 @@ class SeleniumJobSite(JobSite):
             try:
                 click_target = element.find_element(how, what)
             except Exception as e:
-                print('error finding element',  what, e)
+                if show_error:
+                    print('error finding element',  what, e)
                 return False
        
         try:
@@ -69,3 +72,42 @@ class SeleniumJobSite(JobSite):
                 # If heights are the same, we've reached the end.
                 break
             last_height = new_height
+
+    def return_element_if_exists(self, element, how, what, check_displayed=True, show_error=False):
+        try:
+            element = element.find_element(how, what) 
+            if check_displayed and not element.is_displayed():
+                return False
+            return element
+        except Exception as e:
+            if show_error:
+                print('error finding element', e)
+            return False
+
+    def return_element_list_if_exists(self, element, how, what, check_displayed=True, show_error=False):
+        try:
+            elements = element.find_elements(how, what) 
+            return elements
+        except Exception as e:
+            if show_error:
+                print('error finding element', e)
+            return False
+
+    def return_text_if_exists(self, element, how=None, what=None):
+        try:
+            if how is not None and what is not None:
+                return element.find_element(how, what).text 
+
+            return element.text 
+        except Exception as e:
+            #print('return text eror', e)
+            return None
+    
+    def return_html_if_exists(self, element, how=None, what=None):
+        try:
+            if how is not None and what is not None:
+                return element.find_element(how, what).get_attribute('innerHTML') 
+            return element.get_attribute('innerHTML') 
+        except Exception as e:
+            #print('return text eror', e)
+            return None
