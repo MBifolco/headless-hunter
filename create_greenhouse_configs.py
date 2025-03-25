@@ -13,35 +13,34 @@ def main(input_csv):
         print(f"Error reading CSV file {input_csv}: {e}")
         return
 
-    # Filter rows where the page was "Powered by Consider"
-    df_consider = df[df["powered_by"].str.lower() == "consider"]
-    print(f"Found {len(df_consider)} Consider sites.")
+    # Filter rows where the page was "Powered by greenhouse"
+    df_greenhouse = df[df["powered_by"].str.lower() == "greenhouse"]
+    print(f"Found {len(df_greenhouse)} greenhouse sites.")
     # Optionally remove duplicate entries based on the 'id' column.
-    df_consider = df_consider.drop_duplicates(subset=["id"])
-    print(f"Found {len(df_consider)} unique Consider sites.")
+    df_greenhouse = df_greenhouse.drop_duplicates(subset=["id"])
+    print(f"Found {len(df_greenhouse)} unique greenhouse sites.")
     new_sites = []
-    for _, row in df_consider.iterrows():
-        career_url = row["career_url"]
-        # Use urlparse to extract the netloc (e.g. "jobs.xyz.com")
-        parsed = urlparse(career_url)
-        subdomain = parsed.netloc
-        # Construct the desired API URL
-        constructed_url = f"https://{subdomain}/api-boards/search-jobs"
+    for _, row in df_greenhouse.iterrows():
+        
         # Get the id from the CSV row (e.g. "sequoia-capital")
-        site_id = row["id"].strip()
+        site_id = str(row["id"]).strip()
+
+        # Construct the desired API URL
+        constructed_url = f"https://boards-api.greenhouse.io/v1/boards/{site_id}/jobs"
+
         # Create a friendly name by replacing hyphens with spaces and capitalizing each word.
         name = " ".join(word.capitalize() for word in site_id.split("-"))
         
         site_dict = {
             "id": site_id,
             "name": name,
-            "type": "consider",
+            "type": "greenhouse",
             "url": constructed_url
         }
         new_sites.append(site_dict)
 
     # Define the output JSON file.
-    output_json = "consider_sites.json"
+    output_json = "greenhouse_sites.json"
     
     # Load existing sites from the JSON file if it exists.
     if os.path.exists(output_json):
@@ -65,7 +64,7 @@ def main(input_csv):
         else:
             print(f"Site {site['id']} already exists; skipping.")
 
-    # Write the updated list back to consider_sites.json.
+    # Write the updated list back to greenhouse_sites.json.
     try:
         with open(output_json, "w", encoding="utf-8") as f:
             json.dump(existing_sites, f, indent=4)
