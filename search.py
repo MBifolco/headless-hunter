@@ -10,6 +10,7 @@ from modules.db import create_db, save_job
 from modules.api.consider import ConsiderApiSite
 from modules.selenium.getro import GetroSeleniumSite
 from modules.api.greenhouse import GreenhouseApiSite
+from modules.bsoup.ventureloop import VentureLoopJobSite
 from pprint import pprint as pp
 
 # Load environment variables from a local .env file
@@ -25,6 +26,7 @@ SCRAPER_CLASSES = {
     "consider": ConsiderApiSite,
     "getro": GetroSeleniumSite,
     "greenhouse": GreenhouseApiSite,
+    "ventureloop": VentureLoopJobSite,
 }
 
 
@@ -35,6 +37,8 @@ with open('test_site_configs.json') as f:
     SITE_CONFIGS.extend(json.load(f))
 """
 #load consider configs
+with open('ventureloop_sites.json') as f:
+    SITE_CONFIGS.extend(json.load(f))
 with open('consider_sites.json') as f:
     SITE_CONFIGS.extend(json.load(f))
     # load greenhouse sites from file
