@@ -1,0 +1,62 @@
+[
+    {
+        "id": "nan",
+        "name": "Nan",
+        "type": "ventureloop",
+        "url": "https://careers.atlasventure.com/opportunities/"
+    },
+    {
+        "id": "atlasventure",
+        "name": "Atlasventure",
+        "type": "ventureloop",
+        "url": "https://careers.atlasventure.com/opportunities/"
+    },
+    {
+        "id": "hyperplane",
+        "name": "Hyperplane",
+        "type": "ventureloop",
+        "url": "https://careers.hyperplane.vc/"
+    },
+    {
+        "id": "portlandseedfund",
+        "name": "Portlandseedfund",
+        "type": "ventureloop",
+        "url": "https://portlandseedfund.com/jobs"
+    },
+    {
+        "id": "blumbergcapital",
+        "name": "Blumbergcapital",
+        "type": "ventureloop",
+        "url": "https://blumbergcapital.com/careers/"
+    },
+    {
+        "id": "firebrandvc",
+        "name": "Firebrandvc",
+        "type": "ventureloop",
+        "url": "http://careers.firebrandvc.com/"
+    },
+    {
+        "id": "ventureloop",
+        "name": "Ventureloop",
+        "type": "ventureloop",
+        "url": "http://www.ventureloop.com/morgenthaler/careers_home.php"
+    },
+    {
+        "id": "noromoseley",
+        "name": "Noromoseley",
+        "type": "ventureloop",
+        "url": "http://careers.noromoseley.com/"
+    },
+    {
+        "id": "winfunding",
+        "name": "Winfunding",
+        "type": "ventureloop",
+        "url": "https://jobs.winfunding.com/"
+    },
+    {
+        "id": "cowboy",
+        "name": "Cowboy",
+        "type": "ventureloop",
+        "url": "https://careers.cowboy.vc/"
+    }
+]
