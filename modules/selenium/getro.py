@@ -22,8 +22,8 @@ class GetroSeleniumSite(SeleniumJobSite):
             print(f"Scraping Getro Selenium site {self.name} {self.url}")
             self.driver.get(self.url)
             time.sleep(5)
-            #self.load_more(By.XPATH, "//button[normalize-space()='Load more']")
-            #self.scroll_to_bottom()
+            self.load_more(By.XPATH, "//button[normalize-space()='Load more']")
+            self.scroll_to_bottom()
             data = []
             # Update these selectors based on the actual HTML structure of the site.
             job_elements = self.driver.find_elements(By.CLASS_NAME, "job-info")
@@ -38,6 +38,7 @@ class GetroSeleniumSite(SeleniumJobSite):
                     link = link_elem.get_attribute("href") if link_elem else None
                     company = self.return_text_if_exists(elem, By.CSS_SELECTOR, "div > div:nth-child(1) > a")
                     location = self.return_text_if_exists(elem, By.CSS_SELECTOR, "div > div:nth-child(2) > div:nth-child(1) > div > div > div > span")
+                    salary = self.return_text_if_exists(elem, By.CSS_SELECTOR, "div > div:nth-child(2) > div:nth-child(2) > p")
                         
                     # Create a simple job object.
                     record = {
@@ -45,13 +46,14 @@ class GetroSeleniumSite(SeleniumJobSite):
                         "title": title,
                         "company_name": company,
                         "apply_url": link,
-                        "location": location
+                        "location": location,
+                        "salary": salary,
                     }
                     #print(f"Found job: {title} - {link} {location }")
                     data.append(record)
                 except Exception as e:
                     print(f"Error parsing a job element on {self.name}")
-            #pp(data)
+           
             jobs = self.transform(data)
             return jobs
         except Exception as e:
@@ -69,24 +71,37 @@ class GetroSeleniumSite(SeleniumJobSite):
             location_country = None
             remote = False
             hybrid = False
-            if item['location'].lower() == 'remote':
-                remote = True
-            elif item['location'].lower() == 'hybrid':
-                hybrid = True
-            elif "," in  item['location']:
-                # TODO - need to check against list of actual countries and or states to parse inconsistent location strings
-                location_data = item['location'].split(",")
-                location_country = location_data[-1].strip() if len(location_data) > 0 else None
-                location_state = location_data[-2].strip() if len(location_data) > 2 else None
-                location_city = location_data[0].strip() if len(location_data) > 1 else None
-            else:
-                location_city = item['location']
+            min_salary = None
+            max_salary = None
+            try: 
+                if item['location'].lower() == 'remote':
+                    remote = True
+                elif item['location'].lower() == 'hybrid':
+                    hybrid = True
+                elif "," in  item['location']:
+                    # TODO - need to check against list of actual countries and or states to parse inconsistent location strings
+                    location_data = item['location'].split(",")
+                    location_country = location_data[-1].strip() if len(location_data) > 0 else None
+                    location_state = location_data[-2].strip() if len(location_data) > 2 else None
+                    location_city = location_data[0].strip() if len(location_data) > 1 else None
+                else:
+                    location_city = item['location']
+            except Exception as e:
+                print(f"Error parsing location data: {e}")
+                pass
 
             if "hybrid" in item.get("title", "").lower():
                 hybrid = True
 
             if "remote" in item.get("title", "").lower():
                 remote = True
+
+            if item.get("salary", ""):
+                salary = item.get("salary", "").replace("$", "").replace("k","").replace("USD", "").strip()
+                if "/" in salary:
+                    salary = salary.split("/")[0]
+                if "-" in salary:
+                    min_salary, max_salary = salary.split("-")
 
             apply_url = item.get("apply_url", "")
             if apply_url:
@@ -102,15 +117,15 @@ class GetroSeleniumSite(SeleniumJobSite):
                 "title": item.get("title"),
                 "company_name": item.get("company_name"),
                 "apply_url": apply_url,
-                "min_salary": None,
-                "max_salary": None,
+                "min_salary": min_salary,
+                "max_salary": max_salary,
                 "location_city": location_city,
                 "location_state": location_state,
                 "location_country": location_country,
                 "remote": remote,
                 "hybrid": hybrid,
             }
-     
+        
             jobs.append(job)
 
         return jobs
