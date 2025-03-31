@@ -24,7 +24,7 @@
             <td>{% if job[7] == 1 %} TRUE {% endif %}</td>
             <td>{% if job[8] == 1 %} TRUE {% endif %}</td>
             <td>{{ job[9] }}</td>
-            <td><a target="_blank" href="{{ job[3] }}">{{ job[3]|truncate(50) }}</a></td>
+            <td>{% if job[3] %}<a target="_blank" href="{{ job[3] }}">{{ job[3]|truncate(50) }}{% endif %}</a></td>
         </tr>
         {% endfor %}
     </table>
