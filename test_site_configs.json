@@ -1,14 +1,8 @@
 [
     {
-        "id": "sequoia-capital",
-        "name": "sequoia-capital",
-        "type": "consider",
-        "url": "https://jobs.sequoiacap.com/api-boards/search-jobs"
-    },
-    {
-        "id": "careers.base10.vc",
-        "name": "careers.base10.vc",
+        "id": "antler",
+        "name": "Antler",
         "type": "getro",
-        "url": "https://careers.base10.vc/jobs"
+        "url": "https://careers.antler.co/jobs"
     }
 ]

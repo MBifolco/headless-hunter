@@ -19,7 +19,8 @@ load_dotenv()
 APP_CONFIG = {
     "positive_terms": ["vp of product", "head of product", "chief product officer"],
     "negative_terms": ["Product Design", "Product Marketing", "Product Development", "Product Engineering", "Product Operations", "Product Insights", "Production", "Product Compliance", "Product Analytics", "Product Ops"],
-    "threshold": 0.8  # Fuzzy match threshold (0 to 1)
+    "location_terms" : ["new york", "ny","USA","United States","US","NYC"],
+    "remote" : True,
 }
 
 SCRAPER_CLASSES = {
@@ -31,22 +32,22 @@ SCRAPER_CLASSES = {
 
 
 SITE_CONFIGS = []
-"""
-#load test configs
-with open('test_site_configs.json') as f:
-    SITE_CONFIGS.extend(json.load(f))
-"""
-#load consider configs
-with open('ventureloop_sites.json') as f:
-    SITE_CONFIGS.extend(json.load(f))
-with open('consider_sites.json') as f:
-    SITE_CONFIGS.extend(json.load(f))
-    # load greenhouse sites from file
-with open('greenhouse_sites.json') as f:
-    SITE_CONFIGS.extend(json.load(f))
-# load sites.json from file
-with open('getro_sites.json') as f:
-    SITE_CONFIGS.extend(json.load(f))
+
+CONFIG_FILES = [
+    'ventureloop_sites.json',
+    'consider_sites.json',
+    'greenhouse_sites.json',
+    'getro_sites.json',
+]
+#CONFIG_FILES = ['test_site_configs.json']
+
+for config_file in CONFIG_FILES:
+    if os.path.exists(config_file):
+        with open(config_file) as f:
+            SITE_CONFIGS.extend(json.load(f))
+    else:
+        print(f"Config file {config_file} does not exist. Skipping.")
+
 
 
 # ====================
