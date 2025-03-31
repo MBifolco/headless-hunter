@@ -73,22 +73,24 @@ class GetroSeleniumSite(SeleniumJobSite):
             hybrid = False
             min_salary = None
             max_salary = None
-            try: 
-                if item['location'].lower() == 'remote':
-                    remote = True
-                elif item['location'].lower() == 'hybrid':
-                    hybrid = True
-                elif "," in  item['location']:
-                    # TODO - need to check against list of actual countries and or states to parse inconsistent location strings
-                    location_data = item['location'].split(",")
-                    location_country = location_data[-1].strip() if len(location_data) > 0 else None
-                    location_state = location_data[-2].strip() if len(location_data) > 2 else None
-                    location_city = location_data[0].strip() if len(location_data) > 1 else None
-                else:
-                    location_city = item['location']
-            except Exception as e:
-                print(f"Error parsing location data: {e}")
-                pass
+            if item.get("location", ""):
+                try: 
+                    if item['location'].lower() == 'remote':
+                        remote = True
+                    elif item['location'].lower() == 'hybrid':
+                        hybrid = True
+                    elif "," in  item['location']:
+                        # TODO - need to check against list of actual countries and or states to parse inconsistent location strings
+                        location_data = item['location'].split(",")
+                        location_country = location_data[-1].strip() if len(location_data) > 0 else None
+                        location_state = location_data[-2].strip() if len(location_data) > 2 else None
+                        location_city = location_data[0].strip() if len(location_data) > 1 else None
+                    else:
+                        location_city = item['location']
+                except Exception as e:
+                    pp(item)
+                    print(f"Error parsing location data: {e}")
+                    pass
 
             if "hybrid" in item.get("title", "").lower():
                 hybrid = True
