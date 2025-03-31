@@ -15,6 +15,38 @@ class JobSite:
         raise NotImplementedError("Subclasses must implement scrape()")
     
     def should_save_job(self, job):
+        
+        if not self.location_check(job):
+            return False
+
+        if not self.position_check(job):
+            return False
+        
+        if not self.remote_check(job) and not self.location_check(job):
+            return False
+        
+        return True
+    
+    def location_check(self, job):
+        location_city = job.get("location_city", "").lower()
+
+        location_terms = self.app_config.get("location_terms", [])
+    
+        if any(term.lower() in location_city for term in location_terms):
+            return True
+    
+        return False
+    
+    def remote_check(self, job):
+        remote = job.get("remote", False)
+        remote_preference = self.app_config.get("remote", False)
+
+        if remote and remote_preference:
+            return True
+        return False
+    
+
+    def position_check(self, job):
         title = job.get("title", "").lower()
         positive_terms = self.app_config.get("positive_terms", [])
         negative_terms = self.app_config.get("negative_terms", [])
