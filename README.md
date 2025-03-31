@@ -22,7 +22,6 @@ Currently HH supports automated scraping of any sites using the following job li
 - Consider
 - Getro 
 - Greenhouse
-- Workday
 - Ventureloop
 
 To add a site that uses one of the above - just add it to the site_configs.json file. 
