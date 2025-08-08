@@ -53,3 +53,6 @@ We have a script that given a list of urls can do a few things:
 
 ### Other Arguments
 - `--output` can set the name of the csv to which the results are saved
+
+### Create Configs
+ - Once this has completed you can run `python update_configs_from_json.py` to add any newly found scrapable pages to the config files
