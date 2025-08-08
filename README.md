@@ -5,6 +5,10 @@ Headless-hunter was created to make it easy to do two things:
 1. Ensure your search covers as many jobs as possible from the companies/sites you care about
 2. Allow for better/custom filtering of those jobs
 
+## Current Coverage
+550 VC Career Pages
+100k+ Jobs
+
 ## Job Scraping
 ### Setup
 1. Update the positive keyword list in main.py to accurately reflect the types of job titles you want.
