@@ -466,5 +466,293 @@
         "name": "Spider Capital",
         "type": "consider",
         "url": "https://careers.spidercapital.com/api-boards/search-jobs"
+    },
+    {
+        "id": "e14-fund",
+        "name": "E14 Fund",
+        "type": "consider",
+        "url": "https://jobs.e14.vc/api-boards/search-jobs"
+    },
+    {
+        "id": "5am-ventures",
+        "name": "5am Ventures",
+        "type": "consider",
+        "url": "https://jobs.5amventures.com/api-boards/search-jobs"
+    },
+    {
+        "id": "capitalg",
+        "name": "Capitalg",
+        "type": "consider",
+        "url": "https://careers.capitalg.com/api-boards/search-jobs"
+    },
+    {
+        "id": "celesta",
+        "name": "Celesta",
+        "type": "consider",
+        "url": "https://careers.celesta.vc/api-boards/search-jobs"
+    },
+    {
+        "id": "hoxton-ventures",
+        "name": "Hoxton Ventures",
+        "type": "consider",
+        "url": "https://jobs.hoxtonventures.com/api-boards/search-jobs"
+    },
+    {
+        "id": "newfund",
+        "name": "Newfund",
+        "type": "consider",
+        "url": "https://jobs.newfundcap.com/api-boards/search-jobs"
+    },
+    {
+        "id": "radian-capital",
+        "name": "Radian Capital",
+        "type": "consider",
+        "url": "https://careers.radiancapital.com/api-boards/search-jobs"
+    },
+    {
+        "id": "zetta-venture-partners",
+        "name": "Zetta Venture Partners",
+        "type": "consider",
+        "url": "https://careers.zettavp.com/api-boards/search-jobs"
+    },
+    {
+        "id": "adverb-ventures",
+        "name": "Adverb Ventures",
+        "type": "consider",
+        "url": "https://jobs.adverb.vc/api-boards/search-jobs"
+    },
+    {
+        "id": "andreessen-horowitz",
+        "name": "Andreessen Horowitz",
+        "type": "consider",
+        "url": "https://jobs.a16z.com/api-boards/search-jobs"
+    },
+    {
+        "id": "at-one-ventures",
+        "name": "At One Ventures",
+        "type": "consider",
+        "url": "https://jobs.atoneventures.com/api-boards/search-jobs"
+    },
+    {
+        "id": "battery-ventures",
+        "name": "Battery Ventures",
+        "type": "consider",
+        "url": "https://jobs.battery.com/api-boards/search-jobs"
+    },
+    {
+        "id": "creandum",
+        "name": "Creandum",
+        "type": "consider",
+        "url": "https://careers.creandum.com/api-boards/search-jobs"
+    },
+    {
+        "id": "crv",
+        "name": "Crv",
+        "type": "consider",
+        "url": "https://jobs.crv.com/api-boards/search-jobs"
+    },
+    {
+        "id": "dimension-capital",
+        "name": "Dimension Capital",
+        "type": "consider",
+        "url": "https://talent.dimensioncap.com/api-boards/search-jobs"
+    },
+    {
+        "id": "first-round-capital",
+        "name": "First Round Capital",
+        "type": "consider",
+        "url": "https://jobs.firstround.com/api-boards/search-jobs"
+    },
+    {
+        "id": "foxmont-capital",
+        "name": "Foxmont Capital",
+        "type": "consider",
+        "url": "https://careers.foxmontcapital.com/api-boards/search-jobs"
+    },
+    {
+        "id": "gv",
+        "name": "Gv",
+        "type": "consider",
+        "url": "https://jobs.gv.com/api-boards/search-jobs"
+    },
+    {
+        "id": "jetblue-ventures",
+        "name": "Jetblue Ventures",
+        "type": "consider",
+        "url": "https://careers.jetblueventures.com/api-boards/search-jobs"
+    },
+    {
+        "id": "lightspeed",
+        "name": "Lightspeed",
+        "type": "consider",
+        "url": "https://jobs.lsvp.com/api-boards/search-jobs"
+    },
+    {
+        "id": "maine-venture-fund",
+        "name": "Maine Venture Fund",
+        "type": "consider",
+        "url": "https://careers.maineventurefund.com/api-boards/search-jobs"
+    },
+    {
+        "id": "market-one-capital",
+        "name": "Market One Capital",
+        "type": "consider",
+        "url": "https://jobs.moc.vc/api-boards/search-jobs"
+    },
+    {
+        "id": "red-cedar-ventures",
+        "name": "Red Cedar Ventures",
+        "type": "consider",
+        "url": "https://jobs.msufoundation.org/api-boards/search-jobs"
+    },
+    {
+        "id": "sosv",
+        "name": "Sosv",
+        "type": "consider",
+        "url": "https://techjobs.sosv.com/api-boards/search-jobs"
+    },
+    {
+        "id": "voyager-ventures",
+        "name": "Voyager Ventures",
+        "type": "consider",
+        "url": "https://careers.voyagervc.com/api-boards/search-jobs"
+    },
+    {
+        "id": "westcap",
+        "name": "Westcap",
+        "type": "consider",
+        "url": "https://careers.westcap.com/api-boards/search-jobs"
+    },
+    {
+        "id": "abstract-ventures",
+        "name": "Abstract Ventures",
+        "type": "consider",
+        "url": "https://jobs.abstractvc.com/api-boards/search-jobs"
+    },
+    {
+        "id": "adara-ventures",
+        "name": "Adara Ventures",
+        "type": "consider",
+        "url": "https://talent.adara.vc/api-boards/search-jobs"
+    },
+    {
+        "id": "aix-ventures",
+        "name": "Aix Ventures",
+        "type": "consider",
+        "url": "https://careers.aixventures.com/api-boards/search-jobs"
+    },
+    {
+        "id": "cultivation-capital",
+        "name": "Cultivation Capital",
+        "type": "consider",
+        "url": "https://portfoliojobs.cultivationcapital.com/api-boards/search-jobs"
+    },
+    {
+        "id": "dfdf",
+        "name": "Dfdf",
+        "type": "consider",
+        "url": "https://jobs.dfdf.vc/api-boards/search-jobs"
+    },
+    {
+        "id": "greenfield-capital",
+        "name": "Greenfield Capital",
+        "type": "consider",
+        "url": "https://careers.greenfield.xyz/api-boards/search-jobs"
+    },
+    {
+        "id": "mvp-ventures",
+        "name": "Mvp Ventures",
+        "type": "consider",
+        "url": "https://talent.mvp-vc.com/api-boards/search-jobs"
+    },
+    {
+        "id": "mudita-venture-partners",
+        "name": "Mudita Venture Partners",
+        "type": "consider",
+        "url": "https://careers.muditavp.com/api-boards/search-jobs"
+    },
+    {
+        "id": "shima-capital",
+        "name": "Shima Capital",
+        "type": "consider",
+        "url": "https://jobs.shima.capital/api-boards/search-jobs"
+    },
+    {
+        "id": "amino-collective",
+        "name": "Amino Collective",
+        "type": "consider",
+        "url": "https://careers.aminocollective.com/api-boards/search-jobs"
+    },
+    {
+        "id": "bain-crypto",
+        "name": "Bain Crypto",
+        "type": "consider",
+        "url": "https://jobs.baincapitalcrypto.com/api-boards/search-jobs"
+    },
+    {
+        "id": "conversion-capital",
+        "name": "Conversion Capital",
+        "type": "consider",
+        "url": "https://jobs.conversioncapital.com/api-boards/search-jobs"
+    },
+    {
+        "id": "extantia",
+        "name": "Extantia",
+        "type": "consider",
+        "url": "https://careers.extantia.com/api-boards/search-jobs"
+    },
+    {
+        "id": "fenbushi-capital",
+        "name": "Fenbushi Capital",
+        "type": "consider",
+        "url": "https://careers.fenbushicapital.vc/api-boards/search-jobs"
+    },
+    {
+        "id": "further-ventures",
+        "name": "Further Ventures",
+        "type": "consider",
+        "url": "https://careers.further.ae/api-boards/search-jobs"
+    },
+    {
+        "id": "hashed",
+        "name": "Hashed",
+        "type": "consider",
+        "url": "https://jobs.hashed.com/api-boards/search-jobs"
+    },
+    {
+        "id": "lakestar",
+        "name": "Lakestar",
+        "type": "consider",
+        "url": "https://careers.lakestar.com/api-boards/search-jobs"
+    },
+    {
+        "id": "ngc",
+        "name": "Ngc",
+        "type": "consider",
+        "url": "https://jobs.ngc.fund/api-boards/search-jobs"
+    },
+    {
+        "id": "myriad-venture-partners",
+        "name": "Myriad Venture Partners",
+        "type": "consider",
+        "url": "https://jobs.myriadventures.com/api-boards/search-jobs"
+    },
+    {
+        "id": "nina-capital",
+        "name": "Nina Capital",
+        "type": "consider",
+        "url": "https://jobs.nina.capital/api-boards/search-jobs"
+    },
+    {
+        "id": "wingman",
+        "name": "Wingman",
+        "type": "consider",
+        "url": "https://jobs.founderful.com/api-boards/search-jobs"
+    },
+    {
+        "id": "age1",
+        "name": "Age1",
+        "type": "consider",
+        "url": "https://careers.age1.com/api-boards/search-jobs"
     }
 ]

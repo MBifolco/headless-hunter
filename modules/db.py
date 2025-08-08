@@ -27,6 +27,7 @@ def create_db():
             remote BOOLEAN,
             hybrid BOOLEAN,
             last_seen DATE,
+            status TEXT DEFAULT '',
             UNIQUE(site_id, job_id)
         )
     ''')
@@ -91,3 +92,21 @@ def update_job(conn, job, scrape_batch):
     except Exception as e:
         print(f"Error updating job {job_id}: {e}")
 
+
+def update_table(conn):
+    """
+    Updates the 'jobs' table to add a new column if it doesn't already exist.
+    This is useful for adding new fields to the job records without losing existing data.
+    """
+    cursor = conn.cursor()
+    try:
+        cursor.execute('''
+            ALTER TABLE jobs ADD COLUMN status TEXT DEFAULT ''
+        ''')
+        conn.commit()
+        print("Table updated successfully.")
+    except sqlite3.OperationalError as e:
+        if "duplicate column name" in str(e):
+            print("Column already exists. No changes made.")
+        else:
+            print(f"Error updating table: {e}")

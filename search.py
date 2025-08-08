@@ -17,8 +17,8 @@ from pprint import pprint as pp
 load_dotenv()
 
 APP_CONFIG = {
-    "positive_terms": ["vp of product", "head of product", "chief product officer"],
-    "negative_terms": ["Product Design", "Product Marketing", "Product Development", "Product Engineering", "Product Operations", "Product Insights", "Production", "Product Compliance", "Product Analytics", "Product Ops"],
+    "positive_terms": ["vp of product", "head of product", "chief product officer", "vp product", "svp product", "cpo"],
+    "negative_terms": ["Product Design", "Product Marketing", "Product Development", "Product Engineering", "Product Operations", "Product Insights", "Production", "Product Compliance", "Product Analytics", "Product Ops", "Chief of Staff", "Product Sales"],
     "location_terms" : ["new york", "ny","USA","United States","US","NYC"],
     "remote" : True,
 }
@@ -34,9 +34,9 @@ SCRAPER_CLASSES = {
 SITE_CONFIGS = []
 
 CONFIG_FILES = [
-    'ventureloop_sites.json',
-    'consider_sites.json',
-    'greenhouse_sites.json',
+    #'ventureloop_sites.json',
+    #'consider_sites.json',
+    #'greenhouse_sites.json',
     'getro_sites.json',
 ]
 #CONFIG_FILES = ['test_site_configs.json']
@@ -56,6 +56,7 @@ for config_file in CONFIG_FILES:
 def main():
     conn = create_db()
     total_jobs_checked = 0
+    total_jobs_saved = 0
     for site_config in SITE_CONFIGS:
         site_type = site_config.pop("type")
         site_name = site_config.get("name")
@@ -64,6 +65,8 @@ def main():
             print(f"No scraper class defined for type '{site_type}' (site: {site_name}). Skipping.")
             continue
         
+        print("")
+        print(f"Processing site: {site_name} (type: {site_type})")
         #if site_type == "consider":
         #    continue
         scraper = scraper_class(app_config = APP_CONFIG, **site_config)
@@ -78,7 +81,9 @@ def main():
                 if scraper.should_save_job(job):
                     saved += 1
                     save_job(conn, job)
-            print(f"Saved {saved} jobs for {site_name}.")
+            
+            total_jobs_saved += saved
+            print(f"Saved {saved} jobs for {site_name}. Total saved jobs: {total_jobs_saved}")
         else:
             print(f"Failed to scrape data from {site_name}.")
       

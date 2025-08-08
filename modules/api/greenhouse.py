@@ -9,7 +9,13 @@ class GreenhouseApiSite(ApiJobSite):
     
         if not data:
             return None
+        
+        if 'jobs' not in data:
+            print(f"No jobs found for {self.name}.")
+            return None
+        
         jobs = self.transform(data["jobs"])
+        
         return jobs
     
     def transform(self, data):

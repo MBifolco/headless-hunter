@@ -23,16 +23,20 @@ class JobSite:
             return False
         
         if not self.remote_check(job) and not self.location_check(job):
+            print(f"Job {job['title']} does not match remote or location criteria.")
+            print(f"Job location: {job.get('location_city', '')}, Remote: {job.get('remote', False)}")
             return False
         
         return True
     
     def location_check(self, job):
-        location_city = job.get("location_city", "").lower()
+        location_city = job.get("location_city", None)
+        if not location_city:
+            return True
 
         location_terms = self.app_config.get("location_terms", [])
     
-        if any(term.lower() in location_city for term in location_terms):
+        if any(term.lower() in location_city.lower() for term in location_terms):
             return True
     
         return False

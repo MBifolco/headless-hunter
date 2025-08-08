@@ -1,5 +1,83 @@
 [
     {
+        "id": "4dxventures",
+        "name": "4dxventures",
+        "type": "getro",
+        "url": "https://careers.4dxventures.com/jobs"
+    },
+    {
+        "id": "newlin",
+        "name": "Newlin",
+        "type": "getro",
+        "url": "https://careers.newlin.vc/jobs"
+    },
+    {
+        "id": "play",
+        "name": "Play",
+        "type": "getro",
+        "url": "https://careers.play.vc/jobs"
+    },
+    {
+        "id": "crossbeam",
+        "name": "crossbeam",
+        "type": "getro",
+        "url": "https://jobs.crossbeam.vc/jobs"
+    },
+    {
+        "id": "dcvc",
+        "name": "dcvc",
+        "type": "getro",
+        "url": "https://jobs.dcvc.com/jobs"
+    },
+    {
+        "id": "fifthwall",
+        "name": "fifthwall",
+        "type": "getro",
+        "url": "https://jobs.fifthwall.vc/jobs"
+    },
+    {
+        "id": "fortinocapital",
+        "name": "Fortino Capital",
+        "type": "getro",
+        "url": "https://talent.fortinocapital.com/jobs"
+    },
+    {
+        "id": "m13",
+        "name": "M13",
+        "type": "getro",
+        "url": "https://jobs.m13.co/jobs"
+    },
+    {
+        "id": "matchstickventures",
+        "name": "Matchstick Ventures",
+        "type": "getro",
+        "url": "https://jobs.matchstickventures.com/jobs"
+    },
+    {
+        "id": "newlin",
+        "name": "Newlin",
+        "type": "getro",
+        "url": "https://careers.newlin.vc/jobs"
+    },
+    {
+        "id": "overture",
+        "name": "Overture",
+        "type": "getro",
+        "url": "https://jobs.overture.vc/jobs"
+    },
+    {
+        "id": "seedcamp",
+        "name": "Seedcamp",
+        "type": "getro",
+        "url": "https://talent.seedcamp.com/jobs"
+    },
+    {
+        "id": "variant",
+        "name": "Variant",
+        "type": "getro",
+        "url": "https://variant.getro.com/jobs"
+    },
+    {
         "id": "antler",
         "name": "Antler",
         "type": "getro",
@@ -12,8 +90,8 @@
         "url": "https://careers.diagram.ca/jobs"
     },
     {
-        "id": "jobs",
-        "name": "Jobs",
+        "id": "westlygroup",
+        "name": "westlygroup",
         "type": "getro",
         "url": "https://jobs.westlygroup.com/jobs"
     },
@@ -30,8 +108,8 @@
         "url": "https://careers.dfjgrowth.com/jobs"
     },
     {
-        "id": "www",
-        "name": "Www",
+        "id": "silvertonpartners",
+        "name": "silvertonpartners",
         "type": "getro",
         "url": "https://www.silvertonpartners.com/jobs"
     },
@@ -1012,5 +1090,983 @@
         "name": "Tlv",
         "type": "getro",
         "url": "https://jobs.tlv.partners/jobs"
+    },
+    {
+        "id": "pillar",
+        "name": "Pillar",
+        "type": "getro",
+        "url": "https://jobs.pillar.vc/jobs"
+    },
+    {
+        "id": "8vc",
+        "name": "8vc",
+        "type": "getro",
+        "url": "https://jobs.8vc.com/jobs"
+    },
+    {
+        "id": "getro",
+        "name": "Getro",
+        "type": "getro",
+        "url": "https://kindredventures.getro.com/jobs"
+    },
+    {
+        "id": "cleanenergyventures",
+        "name": "Cleanenergyventures",
+        "type": "getro",
+        "url": "https://jobs.cleanenergyventures.com/jobs"
+    },
+    {
+        "id": "powerhouse",
+        "name": "Powerhouse",
+        "type": "getro",
+        "url": "https://careers.powerhouse.fund/jobs"
+    },
+    {
+        "id": "metaprop",
+        "name": "Metaprop",
+        "type": "getro",
+        "url": "https://jobs.metaprop.com/jobs"
+    },
+    {
+        "id": "tolacapital",
+        "name": "Tolacapital",
+        "type": "getro",
+        "url": "https://portfoliocareers.tolacapital.com/jobs"
+    },
+    {
+        "id": "tusk",
+        "name": "Tusk",
+        "type": "getro",
+        "url": "https://jobs.tusk.vc/jobs"
+    },
+    {
+        "id": "25madison",
+        "name": "25madison",
+        "type": "getro",
+        "url": "https://jobs.25madison.com/jobs"
+    },
+    {
+        "id": "645ventures",
+        "name": "645ventures",
+        "type": "getro",
+        "url": "https://jobs.645ventures.com/jobs"
+    },
+    {
+        "id": "acadianventures",
+        "name": "Acadianventures",
+        "type": "getro",
+        "url": "https://jobs.acadianventures.com/jobs"
+    },
+    {
+        "id": "accel",
+        "name": "Accel",
+        "type": "getro",
+        "url": "https://jobs.accel.com/jobs"
+    },
+    {
+        "id": "avp",
+        "name": "Avp",
+        "type": "getro",
+        "url": "https://jobs.avp.vc/jobs"
+    },
+    {
+        "id": "airtree",
+        "name": "Airtree",
+        "type": "getro",
+        "url": "https://jobs.airtree.vc/jobs"
+    },
+    {
+        "id": "album",
+        "name": "Album",
+        "type": "getro",
+        "url": "https://jobs.album.vc/jobs"
+    },
+    {
+        "id": "almazcapital",
+        "name": "Almazcapital",
+        "type": "getro",
+        "url": "https://jobs.almazcapital.com/jobs"
+    },
+    {
+        "id": "alphapartners",
+        "name": "Alphapartners",
+        "type": "getro",
+        "url": "https://jobs.alphapartners.com/jobs"
+    },
+    {
+        "id": "angelventures",
+        "name": "Angelventures",
+        "type": "getro",
+        "url": "https://jobs.angelventures.vc/jobs"
+    },
+    {
+        "id": "ascend",
+        "name": "Ascend",
+        "type": "getro",
+        "url": "https://jobs.ascend.vc/jobs"
+    },
+    {
+        "id": "astanor",
+        "name": "Astanor",
+        "type": "getro",
+        "url": "https://jobs.astanor.com/jobs"
+    },
+    {
+        "id": "acp",
+        "name": "Acp",
+        "type": "getro",
+        "url": "https://jobs.acp.vc/jobs"
+    },
+    {
+        "id": "bbgventures",
+        "name": "Bbgventures",
+        "type": "getro",
+        "url": "https://jobs.bbgventures.com/jobs"
+    },
+    {
+        "id": "beliade",
+        "name": "Beliade",
+        "type": "getro",
+        "url": "https://jobs.beliade.co/jobs"
+    },
+    {
+        "id": "blackjays",
+        "name": "Blackjays",
+        "type": "getro",
+        "url": "https://jobs.blackjays.vc/jobs"
+    },
+    {
+        "id": "onblueprint",
+        "name": "Onblueprint",
+        "type": "getro",
+        "url": "https://www.onblueprint.com/jobs"
+    },
+    {
+        "id": "breakout",
+        "name": "Breakout",
+        "type": "getro",
+        "url": "https://jobs.breakout.vc/jobs"
+    },
+    {
+        "id": "bpc",
+        "name": "Bpc",
+        "type": "getro",
+        "url": "https://jobs.bpc.com/jobs"
+    },
+    {
+        "id": "buoyant",
+        "name": "Buoyant",
+        "type": "getro",
+        "url": "https://careers.buoyant.vc/jobs"
+    },
+    {
+        "id": "canapi",
+        "name": "Canapi",
+        "type": "getro",
+        "url": "https://careers.canapi.com/jobs"
+    },
+    {
+        "id": "coatue",
+        "name": "Coatue",
+        "type": "getro",
+        "url": "https://jobs.coatue.com/jobs"
+    },
+    {
+        "id": "coinfund",
+        "name": "Coinfund",
+        "type": "getro",
+        "url": "https://jobs.coinfund.io/jobs"
+    },
+    {
+        "id": "daphni",
+        "name": "Daphni",
+        "type": "getro",
+        "url": "https://talent.daphni.com/jobs"
+    },
+    {
+        "id": "designerfund",
+        "name": "Designerfund",
+        "type": "getro",
+        "url": "https://jobs.designerfund.com/jobs"
+    },
+    {
+        "id": "detroit",
+        "name": "Detroit",
+        "type": "getro",
+        "url": "https://jobs.detroit.vc/jobs"
+    },
+    {
+        "id": "differential",
+        "name": "Differential",
+        "type": "getro",
+        "url": "https://www.differential.vc/jobs"
+    },
+    {
+        "id": "dcg",
+        "name": "Dcg",
+        "type": "getro",
+        "url": "https://jobs.dcg.co/jobs"
+    },
+    {
+        "id": "energizecap",
+        "name": "Energizecap",
+        "type": "getro",
+        "url": "https://jobs.energizecap.com/jobs"
+    },
+    {
+        "id": "entreecap",
+        "name": "Entreecap",
+        "type": "getro",
+        "url": "https://jobs.entreecap.com/jobs"
+    },
+    {
+        "id": "fprimecapital",
+        "name": "Fprimecapital",
+        "type": "getro",
+        "url": "https://jobs.fprimecapital.com/jobs"
+    },
+    {
+        "id": "femalefoundersfund",
+        "name": "Femalefoundersfund",
+        "type": "getro",
+        "url": "https://jobs.femalefoundersfund.com/jobs"
+    },
+    {
+        "id": "firstraysvc",
+        "name": "Firstraysvc",
+        "type": "getro",
+        "url": "https://jobs.firstraysvc.com/jobs"
+    },
+    {
+        "id": "firstminute",
+        "name": "Firstminute",
+        "type": "getro",
+        "url": "https://jobs.firstminute.capital/jobs"
+    },
+    {
+        "id": "framework",
+        "name": "Framework",
+        "type": "getro",
+        "url": "https://jobs.framework.ventures/jobs"
+    },
+    {
+        "id": "fulcrumep",
+        "name": "Fulcrumep",
+        "type": "getro",
+        "url": "https://jobs.fulcrumep.com/jobs"
+    },
+    {
+        "id": "g2vp",
+        "name": "G2vp",
+        "type": "getro",
+        "url": "https://jobs.g2vp.com/jobs"
+    },
+    {
+        "id": "generalcatalyst",
+        "name": "Generalcatalyst",
+        "type": "getro",
+        "url": "https://jobs.generalcatalyst.com/jobs"
+    },
+    {
+        "id": "georgian",
+        "name": "Georgian",
+        "type": "getro",
+        "url": "https://careers.georgian.io/jobs"
+    },
+    {
+        "id": "gfrfund",
+        "name": "Gfrfund",
+        "type": "getro",
+        "url": "https://jobs.gfrfund.com/jobs"
+    },
+    {
+        "id": "global",
+        "name": "Global",
+        "type": "getro",
+        "url": "https://jobs.global.vc/jobs"
+    },
+    {
+        "id": "headline",
+        "name": "Headline",
+        "type": "getro",
+        "url": "https://talent.headline.com/jobs"
+    },
+    {
+        "id": "insightpartners",
+        "name": "Insightpartners",
+        "type": "getro",
+        "url": "https://jobs.insightpartners.com/jobs"
+    },
+    {
+        "id": "inspiredcapital",
+        "name": "Inspiredcapital",
+        "type": "getro",
+        "url": "https://jobs.inspiredcapital.com/jobs"
+    },
+    {
+        "id": "intudovc",
+        "name": "Intudovc",
+        "type": "getro",
+        "url": "https://careers.intudovc.com/jobs"
+    },
+    {
+        "id": "investnebraska",
+        "name": "Investnebraska",
+        "type": "getro",
+        "url": "https://jobs.investnebraska.com/jobs"
+    },
+    {
+        "id": "ironspring",
+        "name": "Ironspring",
+        "type": "getro",
+        "url": "https://jobs.ironspring.com/jobs"
+    },
+    {
+        "id": "leftlanecap",
+        "name": "Leftlanecap",
+        "type": "getro",
+        "url": "https://jobs.leftlanecap.com/jobs"
+    },
+    {
+        "id": "lererhippeau",
+        "name": "Lererhippeau",
+        "type": "getro",
+        "url": "https://jobs.lererhippeau.com/jobs"
+    },
+    {
+        "id": "liveoakvp",
+        "name": "Liveoakvp",
+        "type": "getro",
+        "url": "https://jobs.liveoakvp.com/jobs"
+    },
+    {
+        "id": "loeb",
+        "name": "Loeb",
+        "type": "getro",
+        "url": "https://www.loeb.nyc/jobs"
+    },
+    {
+        "id": "lorimerventures",
+        "name": "Lorimerventures",
+        "type": "getro",
+        "url": "https://jobs.lorimerventures.com/jobs"
+    },
+    {
+        "id": "mtechcapital",
+        "name": "Mtechcapital",
+        "type": "getro",
+        "url": "https://jobs.mtechcapital.com/jobs"
+    },
+    {
+        "id": "nextfrontiercapital",
+        "name": "Nextfrontiercapital",
+        "type": "getro",
+        "url": "https://jobs.nextfrontiercapital.com/jobs"
+    },
+    {
+        "id": "nfx",
+        "name": "Nfx",
+        "type": "getro",
+        "url": "https://jobs.nfx.com/jobs"
+    },
+    {
+        "id": "ngpcap",
+        "name": "Ngpcap",
+        "type": "getro",
+        "url": "https://jobs.ngpcap.com/jobs"
+    },
+    {
+        "id": "nyca",
+        "name": "Nyca",
+        "type": "getro",
+        "url": "https://jobs.nyca.com/jobs"
+    },
+    {
+        "id": "obvious",
+        "name": "Obvious",
+        "type": "getro",
+        "url": "https://jobs.obvious.com/jobs"
+    },
+    {
+        "id": "omegavp",
+        "name": "Omegavp",
+        "type": "getro",
+        "url": "https://jobs.omegavp.com/jobs"
+    },
+    {
+        "id": "originventures",
+        "name": "Originventures",
+        "type": "getro",
+        "url": "https://jobs.originventures.com/jobs"
+    },
+    {
+        "id": "outsidersfund",
+        "name": "Outsidersfund",
+        "type": "getro",
+        "url": "https://jobs.outsidersfund.com/jobs"
+    },
+    {
+        "id": "perotjain",
+        "name": "Perotjain",
+        "type": "getro",
+        "url": "https://jobs.perotjain.com/jobs"
+    },
+    {
+        "id": "petersonventures",
+        "name": "Petersonventures",
+        "type": "getro",
+        "url": "https://jobs.petersonventures.com/jobs"
+    },
+    {
+        "id": "rallyventures",
+        "name": "Rallyventures",
+        "type": "getro",
+        "url": "https://jobs.rallyventures.com/jobs"
+    },
+    {
+        "id": "reddogcap",
+        "name": "Reddogcap",
+        "type": "getro",
+        "url": "https://jobs.reddogcap.com/jobs"
+    },
+    {
+        "id": "riverparkvc",
+        "name": "Riverparkvc",
+        "type": "getro",
+        "url": "https://jobs.riverparkvc.com/jobs"
+    },
+    {
+        "id": "com",
+        "name": "Com",
+        "type": "getro",
+        "url": "https://runacap.com/jobs"
+    },
+    {
+        "id": "sapphireventures",
+        "name": "Sapphireventures",
+        "type": "getro",
+        "url": "https://jobs.sapphireventures.com/jobs"
+    },
+    {
+        "id": "cognitivecollective",
+        "name": "Cognitivecollective",
+        "type": "getro",
+        "url": "https://www.cognitivecollective.com/jobs"
+    },
+    {
+        "id": "scalevp",
+        "name": "Scalevp",
+        "type": "getro",
+        "url": "https://jobs.scalevp.com/jobs"
+    },
+    {
+        "id": "serenaventures",
+        "name": "Serenaventures",
+        "type": "getro",
+        "url": "https://svcareers.serenaventures.com/jobs"
+    },
+    {
+        "id": "stripes",
+        "name": "Stripes",
+        "type": "getro",
+        "url": "https://jobs.stripes.co/jobs"
+    },
+    {
+        "id": "susaventures",
+        "name": "Susaventures",
+        "type": "getro",
+        "url": "https://jobs.susaventures.com/jobs"
+    },
+    {
+        "id": "tapestry",
+        "name": "Tapestry",
+        "type": "getro",
+        "url": "https://jobs.tapestry.vc/jobs"
+    },
+    {
+        "id": "everywhere",
+        "name": "Everywhere",
+        "type": "getro",
+        "url": "https://jobs.everywhere.vc/jobs"
+    },
+    {
+        "id": "toyota",
+        "name": "Toyota",
+        "type": "getro",
+        "url": "https://jobs.toyota.ventures/jobs"
+    },
+    {
+        "id": "trueventures",
+        "name": "Trueventures",
+        "type": "getro",
+        "url": "https://jobs.trueventures.com/jobs"
+    },
+    {
+        "id": "upwest",
+        "name": "Upwest",
+        "type": "getro",
+        "url": "https://jobs.upwest.vc/jobs"
+    },
+    {
+        "id": "valor",
+        "name": "Valor",
+        "type": "getro",
+        "url": "https://jobs.valor.vc/jobs"
+    },
+    {
+        "id": "vamosventures",
+        "name": "Vamosventures",
+        "type": "getro",
+        "url": "https://jobs.vamosventures.com/jobs"
+    },
+    {
+        "id": "venrock",
+        "name": "Venrock",
+        "type": "getro",
+        "url": "https://jobs.venrock.com/jobs"
+    },
+    {
+        "id": "volitioncapital",
+        "name": "Volitioncapital",
+        "type": "getro",
+        "url": "https://jobs.volitioncapital.com/jobs"
+    },
+    {
+        "id": "7pc",
+        "name": "7pc",
+        "type": "getro",
+        "url": "https://jobs.7pc.vc/jobs"
+    },
+    {
+        "id": "acme",
+        "name": "Acme",
+        "type": "getro",
+        "url": "https://jobs.acme.vc/jobs"
+    },
+    {
+        "id": "backed",
+        "name": "Backed",
+        "type": "getro",
+        "url": "https://talent.backed.vc/jobs"
+    },
+    {
+        "id": "basisset",
+        "name": "Basisset",
+        "type": "getro",
+        "url": "https://jobs.basisset.com/jobs"
+    },
+    {
+        "id": "b",
+        "name": "B",
+        "type": "getro",
+        "url": "https://jobs.b.capital/jobs"
+    },
+    {
+        "id": "benchstrengthvc",
+        "name": "Benchstrengthvc",
+        "type": "getro",
+        "url": "https://jobs.benchstrengthvc.com/jobs"
+    },
+    {
+        "id": "bullpencap",
+        "name": "Bullpencap",
+        "type": "getro",
+        "url": "https://talent.bullpencap.com/jobs"
+    },
+    {
+        "id": "cornerstonevc",
+        "name": "Cornerstonevc",
+        "type": "getro",
+        "url": "https://careers.cornerstonevc.co/jobs"
+    },
+    {
+        "id": "elsewhere",
+        "name": "Elsewhere",
+        "type": "getro",
+        "url": "https://jobs.elsewhere.partners/jobs"
+    },
+    {
+        "id": "firstmilevc",
+        "name": "Firstmilevc",
+        "type": "getro",
+        "url": "https://jobs.firstmilevc.com/jobs"
+    },
+    {
+        "id": "flashpointvc",
+        "name": "Flashpointvc",
+        "type": "getro",
+        "url": "https://jobs.flashpointvc.com/jobs"
+    },
+    {
+        "id": "foundationcapital",
+        "name": "Foundationcapital",
+        "type": "getro",
+        "url": "https://jobs.foundationcapital.com/jobs"
+    },
+    {
+        "id": "greycroft",
+        "name": "Greycroft",
+        "type": "getro",
+        "url": "https://jobs.greycroft.com/jobs"
+    },
+    {
+        "id": "indicatorventures",
+        "name": "Indicatorventures",
+        "type": "getro",
+        "url": "https://careers.indicatorventures.com/jobs"
+    },
+    {
+        "id": "kickstart",
+        "name": "Kickstart",
+        "type": "getro",
+        "url": "https://jobs.kickstart.com/jobs"
+    },
+    {
+        "id": "motivate",
+        "name": "Motivate",
+        "type": "getro",
+        "url": "https://jobs.motivate.vc/jobs"
+    },
+    {
+        "id": "msm",
+        "name": "Msm",
+        "type": "getro",
+        "url": "https://careers.msm.vc/jobs"
+    },
+    {
+        "id": "octopusventures",
+        "name": "Octopusventures",
+        "type": "getro",
+        "url": "https://talent.octopusventures.com/jobs"
+    },
+    {
+        "id": "peak",
+        "name": "Peak",
+        "type": "getro",
+        "url": "https://jobs.peak.capital/jobs"
+    },
+    {
+        "id": "pnptc",
+        "name": "Pnptc",
+        "type": "getro",
+        "url": "https://jobs.pnptc.com/jobs"
+    },
+    {
+        "id": "sarahsmith",
+        "name": "Sarahsmith",
+        "type": "getro",
+        "url": "https://jobs.sarahsmith.fund/jobs"
+    },
+    {
+        "id": "sequel",
+        "name": "Sequel",
+        "type": "getro",
+        "url": "https://jobs.sequel.co/jobs"
+    },
+    {
+        "id": "tpycapital",
+        "name": "Tpycapital",
+        "type": "getro",
+        "url": "https://jobs.tpycapital.com/jobs"
+    },
+    {
+        "id": "unanimous",
+        "name": "Unanimous",
+        "type": "getro",
+        "url": "https://careers.unanimous.vc/jobs"
+    },
+    {
+        "id": "uncorkcapital",
+        "name": "Uncorkcapital",
+        "type": "getro",
+        "url": "https://jobs.uncorkcapital.com/jobs"
+    },
+    {
+        "id": "406ventures",
+        "name": "406ventures",
+        "type": "getro",
+        "url": "https://jobs.406ventures.com/jobs"
+    },
+    {
+        "id": "allegiscyber",
+        "name": "Allegiscyber",
+        "type": "getro",
+        "url": "https://careers.allegiscyber.com/jobs"
+    },
+    {
+        "id": "eclipse",
+        "name": "Eclipse",
+        "type": "getro",
+        "url": "https://jobs.eclipse.capital/jobs"
+    },
+    {
+        "id": "emcap",
+        "name": "Emcap",
+        "type": "getro",
+        "url": "https://talent.emcap.com/jobs"
+    },
+    {
+        "id": "fintech",
+        "name": "Fintech",
+        "type": "getro",
+        "url": "https://jobs.fintech.io/jobs"
+    },
+    {
+        "id": "folklore",
+        "name": "Folklore",
+        "type": "getro",
+        "url": "https://roles.folklore.vc/jobs"
+    },
+    {
+        "id": "forward",
+        "name": "Forward",
+        "type": "getro",
+        "url": "https://careers.forward.one/jobs"
+    },
+    {
+        "id": "graduate",
+        "name": "Graduate",
+        "type": "getro",
+        "url": "https://jobs.graduate.nl/jobs"
+    },
+    {
+        "id": "group11",
+        "name": "Group11",
+        "type": "getro",
+        "url": "https://jobs.group11.vc/jobs"
+    },
+    {
+        "id": "hgventures",
+        "name": "Hgventures",
+        "type": "getro",
+        "url": "https://portcojobs.hgventures.com/jobs"
+    },
+    {
+        "id": "proptechtalent",
+        "name": "Proptechtalent",
+        "type": "getro",
+        "url": "https://proptechtalent.org/jobs"
+    },
+    {
+        "id": "jumpcap",
+        "name": "Jumpcap",
+        "type": "getro",
+        "url": "https://jobs.jumpcap.com/jobs"
+    },
+    {
+        "id": "kayyakventures",
+        "name": "Kayyakventures",
+        "type": "getro",
+        "url": "https://jobs.kayyakventures.com/jobs"
+    },
+    {
+        "id": "kindredcapital",
+        "name": "Kindredcapital",
+        "type": "getro",
+        "url": "https://jobs.kindredcapital.vc/jobs"
+    },
+    {
+        "id": "kompas",
+        "name": "Kompas",
+        "type": "getro",
+        "url": "https://careers.kompas.vc/jobs"
+    },
+    {
+        "id": "lewisandclarkventures",
+        "name": "Lewisandclarkventures",
+        "type": "getro",
+        "url": "https://jobs.lewisandclarkventures.com/jobs"
+    },
+    {
+        "id": "newmarketsvp",
+        "name": "Newmarketsvp",
+        "type": "getro",
+        "url": "https://jobs.newmarketsvp.com/jobs"
+    },
+    {
+        "id": "outlierventures",
+        "name": "Outlierventures",
+        "type": "getro",
+        "url": "https://jobs.outlierventures.io/jobs"
+    },
+    {
+        "id": "rev1ventures",
+        "name": "Rev1ventures",
+        "type": "getro",
+        "url": "https://jobs.rev1ventures.com/jobs"
+    },
+    {
+        "id": "sagavc",
+        "name": "Sagavc",
+        "type": "getro",
+        "url": "https://jobs.sagavc.com/jobs"
+    },
+    {
+        "id": "sixty8",
+        "name": "Sixty8",
+        "type": "getro",
+        "url": "https://jobs.sixty8.capital/jobs"
+    },
+    {
+        "id": "superset",
+        "name": "Superset",
+        "type": "getro",
+        "url": "https://careers.superset.com/jobs"
+    },
+    {
+        "id": "1011vc",
+        "name": "1011vc",
+        "type": "getro",
+        "url": "https://jobs.1011vc.com/jobs"
+    },
+    {
+        "id": "abven",
+        "name": "Abven",
+        "type": "getro",
+        "url": "https://jobs.abven.com/jobs"
+    },
+    {
+        "id": "becocapital",
+        "name": "Becocapital",
+        "type": "getro",
+        "url": "https://careers.becocapital.com/jobs"
+    },
+    {
+        "id": "bluehaveninitiative",
+        "name": "Bluehaveninitiative",
+        "type": "getro",
+        "url": "https://www.bluehaveninitiative.com/jobs"
+    },
+    {
+        "id": "closedlooppartners",
+        "name": "Closedlooppartners",
+        "type": "getro",
+        "url": "https://jobs.closedlooppartners.com/jobs"
+    },
+    {
+        "id": "13bookscapital",
+        "name": "13bookscapital",
+        "type": "getro",
+        "url": "https://13bookscapital.com/jobs"
+    },
+    {
+        "id": "endeit",
+        "name": "Endeit",
+        "type": "getro",
+        "url": "https://careers.endeit.com/jobs"
+    },
+    {
+        "id": "longhash",
+        "name": "Longhash",
+        "type": "getro",
+        "url": "https://careers.longhash.vc/jobs"
+    },
+    {
+        "id": "msivfund",
+        "name": "Msivfund",
+        "type": "getro",
+        "url": "https://jobs.msivfund.com/jobs"
+    },
+    {
+        "id": "polygon",
+        "name": "Polygon",
+        "type": "getro",
+        "url": "https://ecosystemjobs.polygon.technology/jobs"
+    },
+    {
+        "id": "portageinvest",
+        "name": "Portageinvest",
+        "type": "getro",
+        "url": "https://careers.portageinvest.com/jobs"
+    },
+    {
+        "id": "underscore",
+        "name": "Underscore",
+        "type": "getro",
+        "url": "https://jobs.underscore.vc/jobs"
+    },
+    {
+        "id": "vertexventureshc",
+        "name": "Vertexventureshc",
+        "type": "getro",
+        "url": "https://jobs.vertexventureshc.com/jobs"
+    },
+    {
+        "id": "animocabrands",
+        "name": "Animocabrands",
+        "type": "getro",
+        "url": "https://careers.animocabrands.com/jobs"
+    },
+    {
+        "id": "joulevc",
+        "name": "Joulevc",
+        "type": "getro",
+        "url": "https://jobs.joulevc.com/jobs"
+    },
+    {
+        "id": "mcj",
+        "name": "Mcj",
+        "type": "getro",
+        "url": "https://jobs.mcj.vc/jobs"
+    },
+    {
+        "id": "tekfenventures",
+        "name": "Tekfenventures",
+        "type": "getro",
+        "url": "https://careers.tekfenventures.com/jobs"
+    },
+    {
+        "id": "thirdsphere",
+        "name": "Thirdsphere",
+        "type": "getro",
+        "url": "https://jobs.thirdsphere.com/jobs"
+    },
+    {
+        "id": "convectivecapital",
+        "name": "Convectivecapital",
+        "type": "getro",
+        "url": "https://jobs.convectivecapital.com/jobs"
+    },
+    {
+        "id": "firstmomentum",
+        "name": "Firstmomentum",
+        "type": "getro",
+        "url": "https://jobs.firstmomentum.vc/jobs"
+    },
+    {
+        "id": "gritventures",
+        "name": "Gritventures",
+        "type": "getro",
+        "url": "https://jobs.gritventures.com/jobs"
+    },
+    {
+        "id": "shieldcap",
+        "name": "Shieldcap",
+        "type": "getro",
+        "url": "https://portfoliocareers.shieldcap.com/jobs"
+    },
+    {
+        "id": "supermooncapital",
+        "name": "Supermooncapital",
+        "type": "getro",
+        "url": "https://jobs.supermooncapital.com/jobs"
+    },
+    {
+        "id": "blueyard",
+        "name": "Blueyard",
+        "type": "getro",
+        "url": "https://jobs.blueyard.com/jobs"
+    },
+    {
+        "id": "humbaventures",
+        "name": "Humbaventures",
+        "type": "getro",
+        "url": "https://jobs.humbaventures.com/jobs"
+    },
+    {
+        "id": "greymattercapital",
+        "name": "Greymattercapital",
+        "type": "getro",
+        "url": "https://careers.greymattercapital.com/jobs"
     }
 ]

@@ -58,5 +58,101 @@
         "name": "Cowboy",
         "type": "ventureloop",
         "url": "https://careers.cowboy.vc/"
+    },
+    {
+        "id": "atomico",
+        "name": "Atomico",
+        "type": "ventureloop",
+        "url": "https://careers.atomico.com/"
+    },
+    {
+        "id": "canvas",
+        "name": "Canvas",
+        "type": "ventureloop",
+        "url": "https://jobs.canvas.vc/"
+    },
+    {
+        "id": "cdpventurecapital",
+        "name": "Cdpventurecapital",
+        "type": "ventureloop",
+        "url": "https://xjobs.cdpventurecapital.it/"
+    },
+    {
+        "id": "clear",
+        "name": "Clear",
+        "type": "ventureloop",
+        "url": "https://clear.ventures/careers/"
+    },
+    {
+        "id": "cotacapital",
+        "name": "Cotacapital",
+        "type": "ventureloop",
+        "url": "https://careers.cotacapital.com/"
+    },
+    {
+        "id": "highlandeurope",
+        "name": "Highlandeurope",
+        "type": "ventureloop",
+        "url": "https://careers.highlandeurope.com/"
+    },
+    {
+        "id": "morgenthaler",
+        "name": "Morgenthaler",
+        "type": "ventureloop",
+        "url": "http://www.ventureloop.com/morgenthaler/careers_home.php"
+    },
+    {
+        "id": "qimingvcusa",
+        "name": "Qimingvcusa",
+        "type": "ventureloop",
+        "url": "https://www.ventureloop.com/qimingvcusa/2022/v1/"
+    },
+    {
+        "id": "stormventures",
+        "name": "Stormventures",
+        "type": "ventureloop",
+        "url": "https://jobs.stormventures.com/"
+    },
+    {
+        "id": "amadeuscapital",
+        "name": "Amadeuscapital",
+        "type": "ventureloop",
+        "url": "https://www.amadeuscapital.com/careers/"
+    },
+    {
+        "id": "nvp",
+        "name": "Nvp",
+        "type": "ventureloop",
+        "url": "https://careers.nvp.com/"
+    },
+    {
+        "id": "ivp",
+        "name": "Ivp",
+        "type": "ventureloop",
+        "url": "https://careers.ivp.com/"
+    },
+    {
+        "id": "visionfund",
+        "name": "Visionfund",
+        "type": "ventureloop",
+        "url": "https://careers.visionfund.com/"
+    },
+    {
+        "id": "transcend",
+        "name": "Transcend",
+        "type": "ventureloop",
+        "url": "http://careers.transcend.fund/"
+    },
+    {
+        "id": "wildcat",
+        "name": "Wildcat",
+        "type": "ventureloop",
+        "url": "http://careers.wildcat.vc/"
+    },
+    {
+        "id": "latinamericafund",
+        "name": "Latinamericafund",
+        "type": "ventureloop",
+        "url": "https://careers.latinamericafund.com/"
     }
 ]

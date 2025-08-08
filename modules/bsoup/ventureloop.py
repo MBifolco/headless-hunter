@@ -12,10 +12,11 @@ class VentureLoopJobSite(BsoupJobSite):
         data = []
 
         # this avoids endless loops for unpredictable reason
+
         for page in range (0, 100):
             current_url = f"{self.url}/pagination.php?&p={page}"
             current_url = current_url.replace("//pagination","/pagination")
-            print(f"Fetching page {page}: {current_url}")
+            #print(f"Fetching page {page}: {current_url}")
 
             try:
                 response = requests.get(current_url)
@@ -31,10 +32,10 @@ class VentureLoopJobSite(BsoupJobSite):
             # Find all job elements; adjust the class name if necessary.
             job_elements = soup.find_all(class_="jobs_row")
             if not job_elements:
-                print("No job elements found; end of pagination.")
+                #print("No job elements found; end of pagination.")
                 break
 
-            print(f"Found {len(job_elements)} job elements on page {page}")
+            #print(f"Found {len(job_elements)} job elements on page {page}")
             for idx, elem in enumerate(job_elements):
                 try:
                     location = None
@@ -42,7 +43,9 @@ class VentureLoopJobSite(BsoupJobSite):
                     # Using similar CSS selectors as in the Selenium example.
                     title_elem = elem.select_one("div.jobs_topRow > div.jobs_descriptionBx > div.job_text > h3")
                     title = title_elem.get_text(strip=True) if title_elem else None 
-
+                    if not title:
+                        print(f"No title found for job element on page {page}, index {idx}. Skipping.")
+                        continue
                     link_elem = elem.select_one("div.jobs_btnnRow > div.apply_btnbx > div > div > a")
                     link = link_elem["href"] if link_elem and link_elem.has_attr("href") else None
 
